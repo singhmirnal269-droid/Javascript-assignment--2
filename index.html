@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<html>
+
+<head>
+    <title>Async Weather Tracker</title>
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div id="main-container">
+
+        <!-- Heading -->
+        <h1 id="title">🌤️ Async Weather Tracker</h1>
+
+        <!-- Top Section -->
+        <div id="top-section">
+
+            <!-- Left Section -->
+            <div id="search-section">
+
+                <h3>Search City</h3>
+
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="search-btn">Search</button>
+
+                <h4>Search History</h4>
+
+                <div id="search-history">
+                    <button class="history-btn">Gurugram</button>
+                    <button class="history-btn">Indore</button>
+                    <button class="history-btn">Delhi</button>
+                </div>
+
+            </div>
+
+
+            <!-- Right Section -->
+            <div id="weather-section">
+
+                <h3>Weather Info</h3>
+
+                <p><b>City:</b> <span id="city-name">Gurugram, IN</span></p>
+                <p><b>Temp:</b> <span id="temperature">16.02 °C</span></p>
+                <p><b>Weather:</b> <span id="weather-type">Mist</span></p>
+                <p><b>Humidity:</b> <span id="humidity">82%</span></p>
+                <p><b>Wind:</b> <span id="wind-speed">2.06 m/s</span></p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Console Section -->
+        <div id="console-section">
+
+            <h3>Console – Event Loop</h3>
+
+            <div id="console-box">
+                <p>Sync Start</p>
+                <p>Sync End</p>
+                <p>[ASYNC] Start fetching</p>
+                <p>Promise.then (Microtask)</p>
+                <p>setTimeout (Macrotask)</p>
+                <p>[ASYNC] Data received</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
